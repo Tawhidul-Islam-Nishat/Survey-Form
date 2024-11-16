@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out the survey form below to help us improve our services.</p>
+
+    <form id="survey-form">
+        <label id="name-label" for="name">Name:</label>
+        <input id="name" type="text" placeholder="Enter your name" required>
+
+        <label id="email-label" for="email">Email:</label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+
+        <label id="number-label" for="number">Age:</label>
+        <input id="number" type="number" placeholder="Enter your age" min="10" max="100" required>
+
+        <label for="dropdown">Which option best describes your role?</label>
+        <select id="dropdown">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="other">Other</option>
+        </select>
+
+        <p>Would you recommend us to a friend?</p>
+        <input type="radio" id="recommend-yes" name="recommend" value="yes">
+        <label for="recommend-yes">Yes</label>
+        
+        <input type="radio" id="recommend-no" name="recommend" value="no">
+        <label for="recommend-no">No</label>
+
+        <p>What services do you use?</p>
+        <input type="checkbox" id="service1" name="services" value="email">
+        <label for="service1">Email</label>
+
+        <input type="checkbox" id="service2" name="services" value="sms">
+        <label for="service2">SMS</label>
+
+        <input type="checkbox" id="service3" name="services" value="phone">
+        <label for="service3">Phone</label>
+
+        <label for="comments">Any comments or suggestions?</label>
+        <textarea id="comments" rows="4" cols="30" placeholder="Enter your comments here"></textarea>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
